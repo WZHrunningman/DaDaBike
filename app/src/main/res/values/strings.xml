@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">DaDaBike</string>
+
+    <string name="username">UserName</string>
+    <string name="password">Password</string>
+    <string name="rememberpassword">Remember me</string>
+    <string name="login">Log in</string>
+    <string name="signup">Sign up</string>
+    <string name="forgetpassword">Forget your Password? </string>
+    <string name="title_activity_text">text</string>
+    <string name="email">email</string>
+    <string name="mobilephonenumber">mobilephonenumber</string>
+
+    <string name="remind">remind</string>
+    <string name="delete">delete</string>
+    <string name="cancel">cancel</string>
+    <string name="confirm">confirm</string>
+
+    <string name="spend">1 RMB</string>
+
+    <string name="go">GO</string>
+
+    <string name="route">route</string>
+    <string name="service">service</string>
+    <string name="repair">repair</string>
+    <string name="logout">logout</string>
+
+    <string name="stroke">My Stroke</string>
+
+    <string name="carnumber">carnumber:1001</string>
+    <string name="orderobjectid">order objectid</string>
+    <string name="time">time</string>
+    <string name="salemoney">salemoney</string>
+    <string name="from">from</string>
+    <string name="to">to</string>
+
+    <string name="ridebill">Ride Bill</string>
+    <string name="yibai">￥100</string>
+    <string name="pay">pay</string>
+    <string name="time1">2019/03/23</string>
+    <string name="carnumber1">car number1</string>
+    <string name="zero">0000</string>
+
+    <string name="scan">scan</string>
+    <string name="navi">navi</string>
+    <string name="inputcat">input car number</string>
+    <string name="cartime">uer car timer</string>
+    <string name="begin">begin</string>
+
+    <string name="displaymessage">display message</string>
+
+    <string name="wurmb">5 RMB</string>
+    <string name="ershirmb">20 RMB</string>
+    <string name="wushirmb">50 RMB</string>
+    <string name="yibairmb">100 RMB</string>
+    <string name="kaishichongzhi">RECHARGE</string>
+
+    <string name="qianbao">money cage</string>
+    <string name="recharge">recharge</string>
+    <string name="balance">balance</string>
+    <string name="cardpackage">Card package</string>
+    <string name="yearcard">Year card</string>
+    <string name="coupon">coupon</string>
+    <string name="lingrmb">0 RMB</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00a7bc</color>
+    <color name="colorPrimaryDark">#0097A7</color>
+    <color name="colorAccent">#00a780</color>
+    <color name="primary_light">#F8BBD0</color>
+    <color name="primaryd_text">#212121</color>
+    <color name="secondary_text">#757575</color>
+    <color name="icons">#f8f8f8</color>
+    <color name="divider">#BDBDBD</color>
+    <color name="blank">#ffffff</color>
+    <color name="button">#90caf9</color>
+
+    <!--页面背景的颜色-->
+    <color name="colorPageBg">#f2f4f5</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+</resources>

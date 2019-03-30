@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="4"
+    android:layout_gravity="center"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".fragment.UseBikeFragment">
+
+    <com.amap.api.maps.MapView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#878282"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="3"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/iv_scan_code"
+                android:layout_width="50dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:src="@mipmap/scan_code"
+                />
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="@string/scan"
+                android:gravity="center"
+                android:textColor="#000"
+                android:textSize="15sp"/>
+            <View
+                android:layout_width="50dp"
+                android:layout_height="1dp"
+                android:background="#000"/>
+            <ImageView
+                android:id="@+id/iv_navigation"
+                android:layout_width="50dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:src="@drawable/positioning"
+                />
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="@string/navi"
+                android:gravity="center"
+                android:textColor="#000"
+                android:textSize="15sp"/>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/ed_input"
+            android:layout_width="130dp"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="103dp"
+            android:background="@mipmap/shape"
+            android:gravity="center"
+            android:hint="@string/inputcat"
+            android:maxLength="4"
+            android:inputType="number"
+            android:textColorHint="#000"
+            android:textSize="20sp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="103dp" />
+
+        <TextView
+            android:id="@+id/tv_bikemessage"
+            android:layout_width="130dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="44dp"
+            android:text=""
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/ll_time"
+            android:layout_width="130dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/tv_bikemessage"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cartime"
+                android:textColor="#000"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00"
+                android:textColor="#ff0000"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textColor="#ff0000"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_minute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00"
+                android:textColor="#ff0000"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textColor="#ff0000"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_second"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00"
+                android:textColor="#f10000"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_startuse"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="19dp"
+            android:background="@drawable/bg_button"
+            android:text="@string/begin"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="19dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

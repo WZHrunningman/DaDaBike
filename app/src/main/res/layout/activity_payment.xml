@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.PaymentActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@mipmap/bg_pay"
+        android:padding="5dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_directions_bike_black_24dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="@string/ridebill"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:textColor="#fff"
+            />
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/spend1"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:textColor="#fff"
+            />
+        <Button
+            android:id="@+id/btn_pay"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:text="@string/pay"
+            android:textColor="#FFF"
+            android:background="@drawable/bg_btn_shape"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="#dfdfdf"
+        android:gravity="center"
+        android:text="@string/time1"
+        android:textColor="#000"
+        android:layout_marginTop="0dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dfdfdf"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/iv_bike"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="42dp"
+            android:padding="3dp"
+            android:src="@mipmap/bike1"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="42dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/carnumber1"
+            android:textColor="#1495cc"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_bikenumber"
+            android:layout_width="46dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="41dp"
+            android:gravity="center"
+            android:text="@string/zero"
+            android:textColor="#000"
+            android:textSize="13sp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="41dp" />
+
+        <ImageView
+            android:id="@+id/iv_time"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignStart="@+id/iv_bike"
+            android:layout_centerVertical="true"
+            android:padding="12dp"
+            android:src="@drawable/time"
+            android:layout_alignLeft="@+id/iv_bike" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="租用时长"
+            android:textColor="#1495cc"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignStart="@+id/tv_bikenumber"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="10/分钟"
+            android:textColor="#ea6161"
+            android:textSize="13sp"
+            android:layout_alignLeft="@+id/tv_bikenumber" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/iv_bike"
+            android:background="#1ee3f1"
+            android:layout_alignParentLeft="true" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/iv_bike"
+            android:padding="12dp"
+            android:src="@mipmap/rent"
+            android:layout_alignLeft="@+id/iv_bike" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="租金"
+            android:textColor="#1495cc"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/tv_bikenumber"
+            android:gravity="center"
+            android:text="￥5/小时"
+            android:textColor="#1ee3f1"
+            android:textSize="13sp"
+            android:layout_alignLeft="@+id/tv_bikenumber" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/iv_time"
+            android:background="#1ee3f1"
+            android:layout_alignParentLeft="true" />
+
+    </RelativeLayout>
+
+</LinearLayout>
